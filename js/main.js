@@ -69,11 +69,11 @@ $(function () {
 	var text = document.getElementById("mText");
 	if(ele.style.display == "block") {
     		ele.style.display = "none";
-		text.innerHTML = "show";
+		text.innerHTML = "Menu";
   	}
 	else {
 		ele.style.display = "block";
-		text.innerHTML = "hide";
+		text.innerHTML = "Menu  |  About  |  Home  |  Back";
 	}
   } 
   //
