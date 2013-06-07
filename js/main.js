@@ -66,13 +66,10 @@ $(function () {
   //  
   function toggleM() {
 	var ele = document.getElementById("menu");
-	var text = document.getElementById("mText");
 	if(ele.style.display = "none") {
-		text.innerHTML = "Menu";
   	}
 	else {
-		ele.style.display = "block";
-		text.innerHTML = "Menu  |  About  |  Home  |  Back";
+	  ele.style.display = "block";
 	}
   } 
   //
