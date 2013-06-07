@@ -55,7 +55,7 @@ $(function () {
     $('#footer').text('Height: ' + windowsHeight);
   }
   scaleFont();
-  preload('roku-content-pic', 'ID_Roku_', 13, '#roku');
+  preload('img/roku-content-pic', 'ID_Roku_', 13, '#roku');
   $(window).resize(function () {
     resizeWidthAdjust();
     scaleFont();
