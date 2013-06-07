@@ -60,15 +60,14 @@ $(function () {
     resizeWidthAdjust();
     scaleFont();
   });
+  }
   //
   // peiming's hide menu code starts here
-  //
-  }
+  //  
   function toggleM() {
 	var ele = document.getElementById("menu");
 	var text = document.getElementById("mText");
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
+	if(ele.style.display = "none") {
 		text.innerHTML = "Menu";
   	}
 	else {
