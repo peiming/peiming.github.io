@@ -64,9 +64,9 @@ $(function () {
   // peiming's hide menu code starts here
   //
   }
-  function toggle(showHideDiv, switchTextDiv) {
-  var ele = document.getElementById(showHideDiv);
-	var text = document.getElementById(switchTextDiv);
+  function toggleM() {
+	var ele = document.getElementById("menu");
+	var text = document.getElementById("mText");
 	if(ele.style.display == "block") {
     		ele.style.display = "none";
 		text.innerHTML = "show";
@@ -74,7 +74,8 @@ $(function () {
 	else {
 		ele.style.display = "block";
 		text.innerHTML = "hide";
-	} 
+	}
+  } 
   //
   // peiming's hide menu code ends here
   //
