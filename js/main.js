@@ -61,18 +61,18 @@ $(function () {
     scaleFont();
   });
   var menu = $('#menu');
-  menu.css('margin-right', -menu.find('li').eq(0).outerWidth()*3);
+  menu.css('margin-right', -menu.find('li').eq(0).outerWidth()*4);
 
   menu.find('li').eq(0).on('click', function() {
     if ($(this).hasClass('menuShow')) {
       $(this).removeClass('menuShow');
       menu.animate({
-        'margin-right': '0'}, 770);
+        'margin-right': '0'}, 750);
     }
     else {
       $(this).addClass('menuShow');
       menu.animate({
-        'margin-right': -menu.find('li').eq(0).outerWidth()*3}, 770);
+        'margin-right': -menu.find('li').eq(0).outerWidth()*4}, 750);
     }
   });
 
