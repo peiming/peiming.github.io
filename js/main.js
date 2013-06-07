@@ -61,20 +61,6 @@ $(function () {
     scaleFont();
   });
   }
-  //
-  // peiming's hide menu code starts here
-  //  
-  function toggleM() {
-	var ele = document.getElementById("menu");
-	if(ele.style.display == "none") {
-    		ele.style.display = "block";
-  	}
-	else {
-	  ele.style.display = "none";
-	}
-  } 
-  //
-  // peiming's hide menu code ends here
-  //
+ 
 
 });
