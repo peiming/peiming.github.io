@@ -66,11 +66,11 @@ $(function () {
   //  
   function toggleM() {
 	var ele = document.getElementById("menu");
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
+	if(ele.style.display == "none") {
+    		ele.style.display = "block";
   	}
 	else {
-	  ele.style.display = "block";
+	  ele.style.display = "none";
 	}
   } 
   //
