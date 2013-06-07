@@ -78,7 +78,7 @@ body {
   margin: 0 0 0 30px;
   padding: 0;
   font-weight: 100;
-  color: #fff;
+  color: #000;
 }
 #main {
   height: 75%;
@@ -93,7 +93,7 @@ body {
 }
 .landing {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(8, 8, 8, 0.8);
   /*display: none;*/
 }
 #landing {
