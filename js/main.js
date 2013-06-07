@@ -1,6 +1,6 @@
 $(function () {
   function preload (picDir, picName, numOfPic, goalID) {
-    // picDir = the folder pictures locate
+    // picDir = img
     // picName = pictures name convention
     // numOfPic = how many pictures are there
     // goalID = destination DIV block
@@ -60,4 +60,23 @@ $(function () {
     resizeWidthAdjust();
     scaleFont();
   });
+  //
+  // peiming's hide menu code starts here
+  //
+  }
+  function toggle(showHideDiv, switchTextDiv) {
+  var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	} 
+  //
+  // peiming's hide menu code ends here
+  //
+
 });
