@@ -49,9 +49,6 @@ body {
   margin-top: -19px;
   color: rgba(0, 0, 0, 0.8);
 }
-.menu-hidden {
-  display: none;
-}
 #menu ul {
   margin: 0;
   padding: 0;
@@ -61,6 +58,9 @@ body {
   display: inline-block;
   border-left: 2px solid #000;
   padding: 0 35px;
+}
+#menu .menu-hidden {
+  display: none;
 }
 #menu li:first-child {
   border-left: 0;
