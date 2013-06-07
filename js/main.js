@@ -61,7 +61,7 @@ $(function () {
     scaleFont();
   });
   var menu = $('#menu');
-  menu.css('margin-right', -menu.find('li').eq(0).outerWidth()*3.4);
+  menu.css('margin-right', -menu.find('li').eq(0).outerWidth()*3.2);
 
   menu.find('li').eq(0).on('click', function() {
     if ($(this).hasClass('menuShow')) {
@@ -72,7 +72,7 @@ $(function () {
     else {
       $(this).addClass('menuShow');
       menu.animate({
-        'margin-right': -menu.find('li').eq(0).outerWidth()*3.4}, 750);
+        'margin-right': -menu.find('li').eq(0).outerWidth()*3.2}, 750);
     }
   });
 
