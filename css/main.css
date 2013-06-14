@@ -83,10 +83,10 @@ body {
 #main {
   height: 75%;
   width: 100%;
-}
-.mainPortfolio {
   overflow-x: scroll;
   overflow-y: hidden;
+}
+.mainPortfolio {
 }
 #footer {
   height: 21%;
@@ -110,6 +110,7 @@ body {
   /*display: none;*/
 }
 #landing {
+  display: none;
   text-align: center;
 }
 #landing img {
@@ -120,7 +121,6 @@ body {
 }
 .portfolio {
   height: 100%;
-  display: none;
 }
 .portfolio-pic {
   height: 100%;

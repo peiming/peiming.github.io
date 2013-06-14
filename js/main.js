@@ -145,9 +145,15 @@ $(function () {
       }).appendTo($(goalID));
       newImg.load(function () {
         totalWidth += $(this).width();
-        $(goalID).css({
-          'width' : totalWidth - 22.0
-        });
+        if (browser === 'Firefox') {
+          $(goalID).css({
+            'width' : totalWidth - 24.0
+          });
+        } else {
+          $(goalID).css({
+            'width' : totalWidth
+          });
+        }
       });
     });
   }
@@ -166,7 +172,8 @@ $(function () {
         totalWidth += $(this).width();
       });
 
-      $(this).css({'width' : (totalWidth - 22.0)});
+      if (browser === 'Firefox') { $(this).css({'width' : (totalWidth - 24.0)}); }
+      else { $(this).css({'width' : totalWidth}); }
     });
   }
   function heightExamine () {
@@ -176,6 +183,7 @@ $(function () {
   scaleFont();
   preload('img/roku-content-pic', 'ID_Roku_', 13, '#roku');
   if (browser === 'Firefox') { $('.portfolio-pic').css('margin', '0 -1px'); }
+  else { $('.portfolio-pic').css('margin', '0'); }
   $(window).resize(function () {
     resizeWidthAdjust();
     scaleFont();
