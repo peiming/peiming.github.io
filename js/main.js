@@ -175,6 +175,9 @@ $(function () {
       if (browser === 'Firefox') { $(this).css({'width' : (totalWidth - 24.0)}); }
       else { $(this).css({'width' : totalWidth}); }
     });
+
+    $('#c-height').text($('#main').height());
+
   }
   function heightExamine () {
     var windowsHeight = $(window).height();
@@ -203,6 +206,7 @@ $(function () {
         'margin-right': -menu.find('li').eq(0).outerWidth()*3.2}, 750);
     }
   });
+  $('#c-height').text($('#main').height());
 
 
 });
