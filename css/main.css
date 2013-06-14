@@ -91,6 +91,19 @@ body {
 #footer {
   height: 21%;
 }
+#socialBtns {
+  text-align: right;
+  width: 130px;
+  float: right;
+  margin-top: 10px;
+}
+#socialBtns span {
+  margin-right: 10px;
+}
+#socialBtns img {
+  width: 50px;
+  height: auto;
+}
 .landing {
   height: 100%;
   background-color: rgba(8, 8, 8, 0.8);
@@ -111,5 +124,4 @@ body {
 }
 .portfolio-pic {
   height: 100%;
-  margin: 0 -1px;
 }
