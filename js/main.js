@@ -186,7 +186,6 @@ $(function () {
   scaleFont();
   preload('img/roku-content-pic', 'ID_Roku_', 13, '#roku');
   if (browser === 'Firefox') { $('.portfolio-pic').css('margin', '0 -1px'); }
-  else { $('.portfolio-pic').css('margin', '0'); }
   $(window).resize(function () {
     resizeWidthAdjust();
     scaleFont();
