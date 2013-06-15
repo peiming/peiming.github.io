@@ -184,7 +184,7 @@ $(function () {
     $('#footer').text('Height: ' + windowsHeight);
   }
   scaleFont();
-  preload('img/roku-content-pic', 'ID_Roku_', 13, '#roku');
+  preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
   if (browser === 'Firefox') { $('.portfolio-pic').css('margin', '0 -1px'); }
   $(window).resize(function () {
     resizeWidthAdjust();
