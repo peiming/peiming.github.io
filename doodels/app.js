@@ -116,7 +116,8 @@ var BrowserDetect = {
 BrowserDetect.init();
 
 var browser =  BrowserDetect.browser;
+var OS = BrowserDetect.OS;
 
 $(function () {
-  $('body').text('Your browser is ' + browser);
+  $('body').text('Your browser is ' + browser + ', with your OS ' + OS);
 });
