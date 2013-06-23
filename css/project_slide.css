@@ -43,7 +43,7 @@ body {
   margin-top: -231.5px;
   width: 1200px;
   height: 463px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .sl-slider {
@@ -169,7 +169,7 @@ body {
   width: 40px;
   height: 40px;
   border: 8px solid #ddd;
-  border: 8px solid rgba(150,150,150,0.4);
+  border: 8px solid rgba(150,150,150,1);
   text-indent: -90000px;
   margin-top: -40px;
   cursor: pointer;
@@ -186,13 +186,13 @@ body {
 }
 
 .nav-arrows span.nav-arrow-prev {
-  left: 5%;
+  left: -5%;
   border-right: none;
   border-top: none;
 }
 
 .nav-arrows span.nav-arrow-next {
-  right: 5%;
+  right: -5%;
   border-left: none;
   border-bottom: none;
 }
