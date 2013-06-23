@@ -130,15 +130,45 @@ body {
   height: 100%;
   background-color: rgba(8, 8, 8, 0.4);
   position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+}
+.project-slide-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  height: 463px;
+  position: relative;
+  top: 50%;
+
 }
 .project-slide {
   text-align: center;
   position: relative;
   top:50%;
 }
-.project-slide img {
-  width: 980px;
-  margin-top: -189px;
+.sl-slide-inner .bg-img {
+  width: 100%;
+  height: 100%;
+}
+.sl-slide-inner .bg-img-1 {
+  background: url('../img/project-select-pic/Intro_AMC.jpg') no-repeat center center;
+  background-size: 100%;
+}
+.sl-slide-inner .bg-img-2 {
+  background: url('../img/project-select-pic/Intro_Roku.jpg') no-repeat center center;
+  background-size: 100%;
+}
+.sl-slide-inner .bg-img-3 {
+  background: url('../img/project-select-pic/Intro_Thesis.jpg') no-repeat center center;
+  background-size: 100%;
+}
+
+.project-slide img,  {
+  width: 1200px;
+  /*margin-top: -231.5px;*/
+/*  width: 980px;
+  margin-top: -189px;*/
 }
 .portfolio {
   display: none;

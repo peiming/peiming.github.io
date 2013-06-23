@@ -6,7 +6,11 @@
   <link rel="shortcut icon" href="img/site-pic/favicon.ico" />
   <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
   <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/project_slide.css" type="text/css" media="screen">
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+  <script type="text/javascript" src="js/jquery.slitslider.js"></script>
 <!--
   <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
  -->
@@ -39,9 +43,66 @@
       </div>
 
       <div id="project-slide" class="slide">
-        <div id="project-slide-01" class="project-slide">
-          <img src="img/project-select-pic/Intro_AMC.jpg">
+<!--  -->
+        <div class="project-slide-wrapper">
+        <div class="container demo-1">
+        <div id="slider" class="sl-slider-wrapper">
+
+        <div class="sl-slider">
+
+          <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-1"></div>
+            </div>
+          </div>
+
+          <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-2"></div>
+            </div>
+          </div>
+
+          <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-3"></div>
+            </div>
+          </div>
+
+          <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              4
+            </div>
+          </div>
+
+          <div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              5
+            </div>
+          </div>
+        </div><!-- /sl-slider -->
+
+        <nav id="nav-arrows" class="nav-arrows">
+          <span class="nav-arrow-prev">Previous</span>
+          <span class="nav-arrow-next">Next</span>
+        </nav>
+
+        <nav id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </nav>
+
+      </div><!-- /slider-wrapper -->
+
         </div>
+      </div>
+<!--  -->
+
+        <!-- <div id="project-slide-01" class="project-slide">
+          <img src="img/project-select-pic/Intro_AMC.jpg">
+        </div> -->
 
       </div>
 
