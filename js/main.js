@@ -123,7 +123,6 @@ $(function () {
     landingImg.on('click', function () {
       landingImg.parent().hide();
       $('#project-slide').show();
-      $('.body-bg').fadeOut();
     });
   }
 
@@ -204,7 +203,7 @@ $(function () {
   $(window).resize(function () {
     resizeWidthAdjust();
     scaleFont();
-    heightExamine();
+
   });
 
   var landingImg = $('.landing').find('img');
@@ -214,9 +213,13 @@ $(function () {
 
   scaleFont();
   landingPageBehavior();
-  heightExamine();
   preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
 
+
+    var projectSlideImg = $('#project-slide').find('img');
+    projectSlideImg.load(function () {
+      console.log('loaded with ', projectSlideImg.height());
+    });
 
   var menu = $('#menu');
   menu.css('margin-right', -menu.find('li').eq(0).outerWidth()*3.2);
