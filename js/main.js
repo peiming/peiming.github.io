@@ -118,7 +118,16 @@ BrowserDetect.init();
 var browser =  BrowserDetect.browser;
 
 $(function () {
-  function preload (picDir, picName, numOfPic, goalID) {
+  function landingPageBehavior() {
+    var landingImg = $('.landing').find('img');
+    landingImg.on('click', function () {
+      landingImg.parent().hide();
+      $('#project-slide').show();
+      $('.body-bg').fadeOut();
+    });
+  }
+
+  function preload(picDir, picName, numOfPic, goalID) {
     // picDir = img
     // picName = pictures name convention
     // numOfPic = how many pictures are there
@@ -178,18 +187,34 @@ $(function () {
 
     $('#c-height').text($('#main').height());
 
+    var landingImg = $('.landing').find('img');
+    landingImg.css('margin-top', landingImg.height() / -2.0);
+
+    var menu = $('#menu');
+    menu.css('margin-right', -menu.find('li').eq(0).outerWidth()*3.2);
+
   }
   function heightExamine () {
     var windowsHeight = $(window).height();
     $('#footer').text('Height: ' + windowsHeight);
   }
-  scaleFont();
-  preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
+
   if (browser === 'Firefox') { $('.portfolio-pic').css('margin', '0 -1px'); }
   $(window).resize(function () {
     resizeWidthAdjust();
     scaleFont();
   });
+
+  var landingImg = $('.landing').find('img');
+  landingImg.load(function () {
+    landingImg.css('margin-top', landingImg.height() / -2.0);
+  });
+
+  scaleFont();
+  landingPageBehavior();
+  preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
+
+
   var menu = $('#menu');
   menu.css('margin-right', -menu.find('li').eq(0).outerWidth()*3.2);
 

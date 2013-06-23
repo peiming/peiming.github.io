@@ -58,6 +58,11 @@ body {
   display: inline-block;
   border-left: 2px solid #000;
   padding: 0 35px;
+  cursor: pointer;
+}
+#menu li:hover {
+  background: #111;
+  color: #fff;
 }
 #menu .menu-hidden {
   display: none;
@@ -83,11 +88,15 @@ body {
 #main {
   height: 75%;
   width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#main.portfolio_main {
   overflow-x: scroll;
   overflow-y: hidden;
 }
-.mainPortfolio {
-}
+
 #footer {
   height: 21%;
 }
@@ -107,19 +116,32 @@ body {
 .landing {
   height: 100%;
   background-color: rgba(8, 8, 8, 0.8);
-  /*display: none;*/
 }
 #landing {
-  display: none;
   text-align: center;
 }
 #landing img {
   position: relative;
   top: 50%;
-  margin-top: -68px;
   width: 70%;
 }
+.slide {
+  display: none;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.4);
+  position: relative;
+}
+.project-slide {
+  text-align: center;
+  position: relative;
+  top:50%;
+}
+.project-slide img {
+  margin-top: -150px;
+  width: 800px;
+}
 .portfolio {
+  display: none;
   height: 100%;
 }
 .portfolio-pic {
