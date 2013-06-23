@@ -196,13 +196,15 @@ $(function () {
   }
   function heightExamine () {
     var windowsHeight = $(window).height();
-    $('#footer').text('Height: ' + windowsHeight);
+    var windowsWidth = $(window).width();
+    $('#footer').text('Height: ' + windowsHeight + ', Width: ' + windowsWidth);
   }
 
   if (browser === 'Firefox') { $('.portfolio-pic').css('margin', '0 -1px'); }
   $(window).resize(function () {
     resizeWidthAdjust();
     scaleFont();
+    heightExamine();
   });
 
   var landingImg = $('.landing').find('img');
@@ -212,6 +214,7 @@ $(function () {
 
   scaleFont();
   landingPageBehavior();
+  heightExamine();
   preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
 
 
