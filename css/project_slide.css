@@ -166,10 +166,10 @@ body {
   position: absolute;
   z-index: 2000;
   top: 50%;
-  width: 80px;
-  height: 191px;
+  width: 100px;
+  height: 720px;
 /*  text-indent: -90000px;*/
-  margin-top: -95.5px;
+  margin-top: -360px;
   cursor: pointer;
 
 /*  -webkit-transform: rotate(45deg);
@@ -178,22 +178,22 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);*/
 }
-
+/*
 .nav-arrows span.nav-arrow-prev:hover {
   background-color: rgba(2,2,2,.4);
 }
 .nav-arrows span.nav-arrow-next:hover {
   background-color: rgba(2,2,2,.4);
-}
+}*/
 
 .nav-arrows span.nav-arrow-prev {
   background: url('../img/site-pic/slide-arrow_L.png') no-repeat center center;
-  left: -80px;
+  left: -100px;
 }
 
 .nav-arrows span.nav-arrow-next {
   background: url('../img/site-pic/slide-arrow_R.png') no-repeat center center;
-  right: -80px;
+  right: -100px;
 }
 
 /* Custom navigation dots */
