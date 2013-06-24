@@ -206,7 +206,7 @@ $(function () {
       $('#landing').hide();
       $('#about').fadeIn();
     });
-    $('#back-link').on('click', function () {
+    $('#home-link').on('click', function () {
       $('.main-content').hide();
       $('#landing').fadeIn();
     });
