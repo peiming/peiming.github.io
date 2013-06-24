@@ -118,6 +118,7 @@ BrowserDetect.init();
 var browser =  BrowserDetect.browser;
 
 $(function () {
+  preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
   function projectSlideFn() {
     var Page = (function() {
 
@@ -196,7 +197,6 @@ $(function () {
     ss.add($items);
 
     */
-
   }
   projectSlideFn();
   function landingPageBehavior() {
@@ -204,6 +204,14 @@ $(function () {
     landingImg.on('click', function () {
       landingImg.parent().hide();
       $('#project-slide').fadeIn();
+    });
+  }
+
+  function projectSlideLink() {
+    $('#roku-link').on('click', function () {
+      $('#main').toggleClass('portfolio_main');
+      $('#project-slide').hide();
+      $('#roku').fadeIn().trigger('resize');
     });
   }
 
@@ -294,7 +302,6 @@ $(function () {
 
   scaleFont();
   landingPageBehavior();
-  preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
 
 
   var menu = $('#menu');
@@ -314,5 +321,6 @@ $(function () {
   });
   $('#c-height').text($('#main').height());
 
+  projectSlideLink();
 
 });
