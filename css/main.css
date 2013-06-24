@@ -164,13 +164,13 @@ body {
 }
 
 .project-slide img,  {
-  width: 1200px;
+ background opacity: 0.4;
+ width: 1200px;
   /*margin-top: -231.5px;*/
 /*  width: 980px;
   margin-top: -189px;*/
 }
 .portfolio {
-  opacity: 0.4;
   display: none;
   height: 100%;
 }
@@ -180,6 +180,7 @@ body {
 .normal-page {
   height: 100%;
 }
+
 
 #about {
   background-color: rgba(8, 8, 8, 0.4)
