@@ -179,3 +179,7 @@ body {
 .normal-page {
   height: 100%;
 }
+
+#about {
+  display: none;
+}
