@@ -170,6 +170,7 @@ body {
   margin-top: -189px;*/
 }
 .portfolio {
+  opacity: 0.4;
   display: none;
   height: 100%;
 }
@@ -181,5 +182,6 @@ body {
 }
 
 #about {
+  background-color: rgba(8, 8, 8, 0.4)
   display: none;
 }
