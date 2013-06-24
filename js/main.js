@@ -201,6 +201,13 @@ $(function () {
     */
   }
 
+  function menuBehavior() {
+    $('#about-link').on('click', function () {
+      $('#landing').hide();
+      $('#about').fadeIn();
+    });
+  }
+
   function landingPageBehavior() {
     var landingImg = $('.landing').find('img');
     landingImg.on('click', function () {
@@ -316,6 +323,7 @@ $(function () {
   scaleFont();
   landingPageBehavior();
   projectSlideFn();
+  menuBehavior();
 
 
   var menu = $('#menu');
