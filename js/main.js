@@ -206,6 +206,10 @@ $(function () {
       $('#landing').hide();
       $('#about').fadeIn();
     });
+    $('#back-link').on('click', function () {
+      $('.main-content').hide();
+      $('#landing').fadeIn();
+    });
   }
 
   function landingPageBehavior() {
