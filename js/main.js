@@ -119,6 +119,8 @@ var browser =  BrowserDetect.browser;
 
 $(function () {
   preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
+  preload('img/amc-content-pic', 'ProjectSelect_amc_', 3, '#amc');
+  preload('img/thesis-content-pic', 'ProjectSelect_Thesis_', 3, '#thesis');
   function projectSlideFn() {
     var Page = (function() {
 
@@ -198,7 +200,7 @@ $(function () {
 
     */
   }
-  projectSlideFn();
+
   function landingPageBehavior() {
     var landingImg = $('.landing').find('img');
     landingImg.on('click', function () {
@@ -209,9 +211,19 @@ $(function () {
 
   function projectSlideLink() {
     $('#roku-link').on('click', function () {
-      $('#main').toggleClass('portfolio_main');
+      if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
       $('#project-slide').hide();
       $('#roku').fadeIn().trigger('resize');
+    });
+    $('#thesis-link').on('click', function () {
+      if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
+      $('#project-slide').hide();
+      $('#thesis').fadeIn().trigger('resize');
+    });
+    $('#amc-link').on('click', function () {
+      if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
+      $('#project-slide').hide();
+      $('#amc').fadeIn().trigger('resize');
     });
   }
 
@@ -269,7 +281,8 @@ $(function () {
         totalWidth += $(this).width();
       });
 
-      if (browser === 'Firefox') { $(this).css({'width' : (totalWidth - 24.0)}); }
+      // if (browser === 'Firefox') { $(this).css({'width' : (totalWidth - 24.0)}); }
+      if (browser === 'Firefox') { $(this).css({'width' : (totalWidth)}); }
       else { $(this).css({'width' : totalWidth}); }
     });
 
@@ -302,6 +315,7 @@ $(function () {
 
   scaleFont();
   landingPageBehavior();
+  projectSlideFn();
 
 
   var menu = $('#menu');
