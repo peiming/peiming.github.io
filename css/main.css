@@ -32,17 +32,12 @@ body {
     left: 50%;
     margin-left: -512px;   /* 50% */
   }
-
-/* to whiten the background pic when showing the content of a project */
+  }
+  /* to whiten the background pic when showing the content of a project */
 .body-bg-show {
   opacity: 0.1;
   }
 
-  }
-
-}
-
-}
 #outer {
   height: 100%;
 }
