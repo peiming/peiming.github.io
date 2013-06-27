@@ -215,7 +215,7 @@ $(function () {
   function landingPageBehavior() {
     var landingImg = $('.landing').find('img');
     landingImg.on('click', function () {
-      landingImg.parent().hide();
+      $('.main-content').hide();
       $('#project-slide').fadeIn();
     });
   }
@@ -226,36 +226,33 @@ $(function () {
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
       $('#project-slide').hide();
       $('#roku').fadeIn().trigger('resize');
-      $('#footer').addClass('project-show');
-      $('#footer').on('click', function () {
-      console.log('clicked');
-      $('.main-content').hide();
-      $('#project-slide').fadeIn();
-    });
+      $('#footer').addClass('project-show').on('click', function () {
+        console.log('clicked');
+        $('.main-content').hide();
+        $('#project-slide').fadeIn();
+      });
     });
     $('#thesis-link').on('click', function () {
       $('.body-bg').addClass('landing');
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
       $('#project-slide').hide();
       $('#thesis').fadeIn().trigger('resize');
-      $('#footer').addClass('project-show');
-      $('#footer').on('click', function () {
-      console.log('clicked');
-      $('.main-content').hide();
-      $('#project-slide').fadeIn();
-    });
+      $('#footer').addClass('project-show').on('click', function () {
+        console.log('clicked');
+        $('.main-content').hide();
+        $('#project-slide').fadeIn();
+      });
     });
     $('#amc-link').on('click', function () {
       $('.body-bg').addClass('landing');
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
       $('#project-slide').hide();
       $('#amc').fadeIn().trigger('resize');
-      $('#footer').addClass('project-show');
-      $('#footer').on('click', function () {
-      console.log('clicked');
-      $('.main-content').hide();
-      $('#project-slide').fadeIn();
-    });
+      $('#footer').addClass('project-show').on('click', function () {
+        console.log('clicked');
+        $('.main-content').hide();
+        $('#project-slide').fadeIn();
+      });
     });
 
   }
