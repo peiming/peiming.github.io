@@ -10,6 +10,9 @@ html, body {
 body {
   background: #fff;
 }
+.body-bg.landing {
+  opacity: 0.1;
+}
 .body-bg {
   opacity: 0.55;
 
@@ -105,9 +108,11 @@ body {
   height: 21%;
 }
 #socialBtns {
+  position: absolute;
+  right: 5px;
+  top: 160px;
   text-align: right;
   width: 130px;
-  float: right;
   margin-top: 10px;
 }
 #socialBtns span {
@@ -117,7 +122,7 @@ body {
   width: 50px;
   height: auto;
 }
-.landing {
+.landing, .normal-page {
   height: 100%;
   background-color: rgba(8, 8, 8, 0.8);
 }
@@ -135,9 +140,20 @@ body {
   background-color: rgba(8, 8, 8, 0.4);
   position: relative;
   overflow: hidden;
-
 }
-.project-slide-wrapper {
+#about {
+  position: relative;
+}
+.about-content {
+  overflow-y: scroll;
+  position: relative;
+  top: -231.5px;
+  background: rgba(255,255,255,0.9);
+  padding: 20px 25px;
+  width: 1200px;
+  height: 463px;
+}
+.project-slide-wrapper, .about-page-wrapper {
   margin: 0 auto;
   width: 1200px;
   height: 463px;
@@ -169,7 +185,7 @@ body {
 }
 
 .project-slide img,  {
-  
+
  width: 1200px;
   /*margin-top: -231.5px;*/
 /*  width: 980px;
@@ -183,6 +199,7 @@ body {
   height: 100%;
 }
 .normal-page {
+  display: none;
   height: 100%;
 }
 

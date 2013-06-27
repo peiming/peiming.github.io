@@ -203,7 +203,7 @@ $(function () {
 
   function menuBehavior() {
     $('#about-link').on('click', function () {
-      $('#landing').hide();
+      $('.main-content').hide();
       $('#about').fadeIn();
     });
     $('#home-link').on('click', function () {
@@ -222,16 +222,19 @@ $(function () {
 
   function projectSlideLink() {
     $('#roku-link').on('click', function () {
+      $('.body-bg').addClass('landing');
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
       $('#project-slide').hide();
       $('#roku').fadeIn().trigger('resize');
     });
     $('#thesis-link').on('click', function () {
+      $('.body-bg').addClass('landing');
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
       $('#project-slide').hide();
       $('#thesis').fadeIn().trigger('resize');
     });
     $('#amc-link').on('click', function () {
+      $('.body-bg').addClass('landing');
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
       $('#project-slide').hide();
       $('#amc').fadeIn().trigger('resize');
