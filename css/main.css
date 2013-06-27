@@ -109,8 +109,8 @@ body {
 }
 #socialBtns {
   position: absolute;
-  right: 5px;
-  top: 160px;
+  right: 40px;
+  top: 120px;
   text-align: right;
   width: 130px;
   margin-top: 10px;
@@ -144,14 +144,39 @@ body {
 #about {
   position: relative;
 }
+.about-content-div {
+  width: 333px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.about-content-left {
+  float: left;
+  margin-left: 50px;
+}
+.about-content-right {
+  float: right;
+  margin-right: 50px;
+}
+.about-content-middle {
+  margin: 0 auto;
+}
 .about-content {
   overflow-y: scroll;
   position: relative;
   top: -231.5px;
   background: rgba(255,255,255,0.9);
-  padding: 20px 25px;
+  padding: 50px 0;
   width: 1200px;
   height: 463px;
+}
+.about-table td {
+  vertical-align: top;
+}
+.about-table td:first-child {
+  padding-right: 90px;
+}
+.about-table td:last-child {
+  padding-left: 90px;
 }
 .project-slide-wrapper, .about-page-wrapper {
   margin: 0 auto;
