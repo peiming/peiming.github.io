@@ -224,10 +224,9 @@ $(function () {
     $('#roku-link').on('click', function () {
       $('.body-bg').addClass('landing');
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
-      $('#project-slide').hide();
+      $('.main-content').hide();
       $('#roku').fadeIn().trigger('resize');
       $('#footer').addClass('project-show').on('click', function () {
-        console.log('clicked');
         $('.main-content').hide();
         $('#project-slide').fadeIn();
       });
@@ -235,10 +234,9 @@ $(function () {
     $('#thesis-link').on('click', function () {
       $('.body-bg').addClass('landing');
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
-      $('#project-slide').hide();
+      $('.main-content').hide();
       $('#thesis').fadeIn().trigger('resize');
       $('#footer').addClass('project-show').on('click', function () {
-        console.log('clicked');
         $('.main-content').hide();
         $('#project-slide').fadeIn();
       });
@@ -246,10 +244,9 @@ $(function () {
     $('#amc-link').on('click', function () {
       $('.body-bg').addClass('landing');
       if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
-      $('#project-slide').hide();
+      $('.main-content').hide();
       $('#amc').fadeIn().trigger('resize');
       $('#footer').addClass('project-show').on('click', function () {
-        console.log('clicked');
         $('.main-content').hide();
         $('#project-slide').fadeIn();
       });
@@ -306,12 +303,17 @@ $(function () {
   function resizeWidthAdjust () {
     $('.portfolio').each(function () {
       var totalWidth = 0;
+      // console.log('width: ', firstImg[0].width, ', height: ', firstImg[0].height);
+      // var firstImg = $(this).find('img').eq(0);
+      // console.log('first ratio: ', firstImg[0].width / firstImg[0].height);
 
       $(this).find('img').each(function () {
         totalWidth += $(this).width();
+        // var widthToHeightRaito = this.width / this.height;
+        // totalWidth += $(this).height() * widthToHeightRaito;
+
       });
 
-      // if (browser === 'Firefox') { $(this).css({'width' : (totalWidth - 24.0)}); }
       if (browser === 'Firefox') { $(this).css({'width' : (totalWidth)}); }
       else { $(this).css({'width' : totalWidth}); }
     });
@@ -335,7 +337,7 @@ $(function () {
   $(window).resize(function () {
     resizeWidthAdjust();
     scaleFont();
-
+    console.log('resized!');
   });
 
   var landingImg = $('.landing').find('img');
