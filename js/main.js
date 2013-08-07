@@ -120,7 +120,7 @@ var browser =  BrowserDetect.browser;
 $(function () {
   preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
   preload('img/amc-content-pic', 'ProjectSelect_amc_', 3, '#amc');
-  preload('img/thesis-content-pic', 'ID_Thesis_L_', 35, '#thesis');
+  preload('img/thesis-content-pic', 'Thesis_L_', 35, '#thesis');
   function projectSlideFn() {
     var Page = (function() {
 
