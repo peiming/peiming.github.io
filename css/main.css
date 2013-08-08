@@ -130,6 +130,7 @@ body {
   text-align: center;
 }
 #landing img {
+  a:hover(background: url('entry_logo_mo.png');
   position: relative;
   top: 50%;
   width: 70%;
