@@ -66,7 +66,7 @@ body {
   display: inline-block;
   border-left: 2px solid #ccc;
   /* Menu location setting was 0 35px */
-  padding: 0 55px;
+  padding: 0 15px;
   cursor: pointer;
 }
 #menu li:hover {
@@ -125,7 +125,7 @@ body {
 }
 .landing, .normal-page {
   height: 100%;
-/*  background-color: rgba(8, 8, 8, 0.8); */
+  background-color: rgba(8, 8, 8, 0.8);
 }
 #landing {
   text-align: center;
