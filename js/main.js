@@ -121,6 +121,7 @@ $(function () {
   preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
   preload('img/amc-content-pic', 'ProjectSelect_amc_', 3, '#amc');
   preload('img/thesis-content-pic', 'Thesis_L_', 36, '#thesis');
+  preload('img/skillset-content-pic', 'SkillSet_', 3, '#skill');
   function projectSlideFn() {
     var Page = (function() {
 
@@ -251,6 +252,16 @@ $(function () {
         $('#project-slide').fadeIn();
       });
     });
+    $('#skill-link').on('click', function () {
+      $('.body-bg').addClass('landing');
+      if (!$('#main').hasClass('portfolio_main')) $('#main').addClass('portfolio_main');
+      $('.main-content').hide();
+      $('#skill').fadeIn().trigger('resize');
+      $('#footer').addClass('project-show').on('click', function () {
+        $('.main-content').hide();
+        $('#project-slide').fadeIn();
+      });
+    });
 
   }
 
@@ -358,12 +369,12 @@ $(function () {
     if ($(this).hasClass('menuShow')) {
       $(this).removeClass('menuShow');
       menu.animate({
-        'margin-right': '0'}, 750);
+        'margin-right': '0'}, 700);
     }
     else {
       $(this).addClass('menuShow');
       menu.animate({
-        'margin-right': -menu.find('li').eq(0).outerWidth()*3.2}, 750);
+        'margin-right': -menu.find('li').eq(0).outerWidth()*3.2}, 700);
     }
   });
   $('#c-height').text($('#main').height());
