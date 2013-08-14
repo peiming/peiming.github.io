@@ -121,7 +121,7 @@ $(function () {
   preload('img/roku-content-pic', 'ID_Roku_', 17, '#roku');
   preload('img/amc-content-pic', 'ProjectSelect_amc_', 3, '#amc');
   preload('img/thesis-content-pic', 'Thesis_L_', 36, '#thesis');
-  preload('img/skillset-content-pic', 'SkillSet_', 3, '#skill');
+  preload('img/skillset-content-pic', 'ProjectSelect_Skill_', 3, '#skill');
   function projectSlideFn() {
     var Page = (function() {
 
