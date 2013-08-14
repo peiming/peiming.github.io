@@ -38,7 +38,7 @@ body {
   }
   /* to whiten the background pic when showing the content of a project */
 .body-bg-show {
-  opacity: 0.1;
+  opacity: 0.8;
   }
 
 #outer {
@@ -53,7 +53,7 @@ body {
   top: 50%;
   float: right;
   font-weight: 300;
-  font-size: 1.9em;
+  font-size: 1.8em;
   margin-top: -17px;
   color: #ccc;
 }
@@ -65,7 +65,7 @@ body {
 #menu li {
   display: inline-block;
   border-left: 2px solid #ccc;
-  padding: 0 35px;
+  padding: 0 135px;
   cursor: pointer;
 }
 #menu li:hover {
@@ -91,7 +91,7 @@ body {
   margin: 0 0 0 30px;
   padding: 0;
   font-weight: 100;
-  color: rgba(d, d, d, 0.9);
+  color: #ccc;
 }
 #main {
   height: 75%;
