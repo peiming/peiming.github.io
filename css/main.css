@@ -65,12 +65,12 @@ body {
 #menu li {
   display: inline-block;
   border-left: 2px solid #ccc;
-  padding: 0 30px;
+  padding: 0 8px;
   cursor: pointer;
 }
 #menu li:hover {
   background: #222;
-  color: rgba(c, c, c, 0.8);
+  color: rgba(c, c, c, 0.9);
 }
 #menu .menu-hidden {
   display: none;
