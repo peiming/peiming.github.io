@@ -55,6 +55,7 @@ body {
   font-weight: 300;
   font-size: 1.8em;
   margin-top: -17px;
+  margin-right: 200px;
   color: #999;
 }
 #menu ul {
@@ -65,7 +66,7 @@ body {
 #menu li {
   display: inline-block;
   border-left: 2px solid #999;
-  padding: 0 3px;
+  padding: 0 35px;
   cursor: pointer;
 }
 #menu li:hover {
