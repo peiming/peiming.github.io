@@ -8,7 +8,7 @@ html, body {
   overflow-x: hidden;
 }
 body {
-  background: #fff;
+  background: #222;
 }
 .body-bg.landing {
   opacity: 0.1;
@@ -55,7 +55,7 @@ body {
   font-weight: 300;
   font-size: 1.8em;
   margin-top: -17px;
-  color: rgba(2, 2, 2, 2.8);
+  color: rgba(d, d, d, 2.8);
 }
 #menu ul {
   margin: 0;
@@ -69,8 +69,8 @@ body {
   cursor: pointer;
 }
 #menu li:hover {
-  background: #111;
-  color: #fff;
+  background: #fff;
+  color: #111;
 }
 #menu .menu-hidden {
   display: none;
@@ -91,7 +91,7 @@ body {
   margin: 0 0 0 30px;
   padding: 0;
   font-weight: 100;
-  color: #222;
+  color: #ddd;
 }
 #main {
   height: 75%;
@@ -124,7 +124,7 @@ body {
 }
 .landing, .normal-page {
   height: 100%;
-  background-color: rgba(8, 8, 8, 0.8);
+/*  background-color: rgba(8, 8, 8, 0.8); */
 }
 #landing {
   text-align: center;
@@ -137,7 +137,7 @@ body {
 .slide {
   display: none;
   height: 100%;
-  background-color: rgba(8, 8, 8, 0.4);
+  /* background-color: rgba(8, 8, 8, 0.4);*/
   position: relative;
   overflow: hidden;
 }
@@ -233,6 +233,6 @@ body {
 
 
 #about {
-  background-color: rgba(8, 8, 8, 0.4)
+  /*background-color: rgba(8, 8, 8, 0.4)*/
   display: none;
 }
