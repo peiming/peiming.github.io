@@ -65,7 +65,7 @@ body {
 #menu li {
   display: inline-block;
   border-left: 2px solid #ccc;
-  padding: 0 135px;
+  padding: 0 -35px;
   cursor: pointer;
 }
 #menu li:hover {
