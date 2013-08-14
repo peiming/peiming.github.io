@@ -55,7 +55,8 @@ body {
   font-weight: 300;
   font-size: 1.8em;
   margin-top: -17px;
-  margin-right: -200px;
+  margin-left: 10px;
+  margin-right: 200px;
   color: #999;
 }
 #menu ul {
