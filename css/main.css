@@ -212,7 +212,10 @@ body {
   background: url('../img/project-select-pic/Intro_AMC.jpg') no-repeat center center;
   background-size: 100%;
 }
-
+.sl-slide-inner .bg-img-4 {
+  background: url('../img/project-select-pic/Intro_Skill.jpg') no-repeat center center;
+  background-size: 100%;
+}
 .project-slide img,  {
 
  width: 1200px;
