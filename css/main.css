@@ -59,13 +59,13 @@ body {
 }
 #menu ul {
   margin: 0;
-  padding: 0;
+  padding: 80px;
   list-style: none;
 }
 #menu li {
   display: inline-block;
   border-left: 2px solid #999;
-  padding: 0 -85px;
+  padding: 0 35px;
   cursor: pointer;
 }
 #menu li:hover {
