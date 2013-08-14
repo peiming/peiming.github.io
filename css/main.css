@@ -64,9 +64,9 @@ body {
 }
 #menu li {
   display: inline-block;
-  border-left: 2px solid #222;
+  border-left: 2px solid #ccc;
   /* Menu location setting was 0 35px */
-  padding: 0 35px;
+  padding: 0 55px;
   cursor: pointer;
 }
 #menu li:hover {
