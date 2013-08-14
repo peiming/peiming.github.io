@@ -53,7 +53,7 @@ body {
   top: 50%;
   float: right;
   font-weight: 300;
-  font-size: 1.8em;
+  font-size: 2.8em;
   margin-top: -17px;
   color: rgba(c, c, c, 2.8);
 }
@@ -65,8 +65,7 @@ body {
 #menu li {
   display: inline-block;
   border-left: 2px solid #ccc;
-  /* Menu location setting was 0 35px */
-  padding: 0 15px;
+  padding: 0 35px;
   cursor: pointer;
 }
 #menu li:hover {
@@ -138,7 +137,7 @@ body {
 .slide {
   display: none;
   height: 100%;
-  /* background-color: rgba(8, 8, 8, 0.4);*/
+  background-color: rgba(8, 8, 8, 0.8);
   position: relative;
   overflow: hidden;
 }
@@ -234,6 +233,6 @@ body {
 
 
 #about {
-  /*background-color: rgba(8, 8, 8, 0.4)*/
+  background-color: rgba(8, 8, 8, 0.8)
   display: none;
 }
