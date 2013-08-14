@@ -53,9 +53,9 @@ body {
   top: 50%;
   float: right;
   font-weight: 300;
-  font-size: 1.8em;
+  font-size: 1.9em;
   margin-top: -17px;
-  color: rgba(c, c, c, 2.8);
+  color: #ccc;
 }
 #menu ul {
   margin: 0;
@@ -65,12 +65,12 @@ body {
 #menu li {
   display: inline-block;
   border-left: 2px solid #ccc;
-  padding: 10 35px;
+  padding: 0 35px;
   cursor: pointer;
 }
 #menu li:hover {
   background: #222;
-  color: rgba(c, c, c, 0.9);
+  color: #ccc;
 }
 #menu .menu-hidden {
   display: none;
