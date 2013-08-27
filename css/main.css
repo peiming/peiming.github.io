@@ -41,13 +41,28 @@ body {
   opacity: 0.8;
   }
 
-#outer {
-  height: 100%;
+a:link {
+  text-decoration:none;
 }
+
+a:visited {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
+a:active {
+  text-decoration:none;
+}
+
+#outer {
+  height: 100%;}
 #top {
   height: 9%;
   min-height: 60px;
-  text-decoration: none;
+  
 }
 #menu {
   position: relative;
