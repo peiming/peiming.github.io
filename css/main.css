@@ -221,7 +221,7 @@ a:active {
   cursor: pointer;
 }
 .sl-slide-inner .bg-img-1 {
-  background: url('../img/project-select-pic/Intro_Thesis.jpg') no-repeat center center;
+  background: url('../img/project-select-pic/Intro_AMC.jpg') no-repeat center center;
   background-size: 100%;
 }
 .sl-slide-inner .bg-img-2 {
@@ -229,7 +229,7 @@ a:active {
   background-size: 100%;
 }
 .sl-slide-inner .bg-img-3 {
-  background: url('../img/project-select-pic/Intro_AMC.jpg') no-repeat center center;
+  background: url('../img/project-select-pic/Intro_Thesis.jpg') no-repeat center center;
   background-size: 100%;
 }
 .sl-slide-inner .bg-img-4 {
